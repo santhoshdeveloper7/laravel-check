@@ -5,6 +5,6 @@
 </head>
 <body>
     <h1>Welcome to My Laravel Project 🎉</h1>
-    <p>This is my first Laravel page. ghfhgf</p>
+    <p>This is my first Laravel page. ghfhgf adsad</p>
 </body>
 </html>
