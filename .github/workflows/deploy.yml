@@ -1,0 +1,26 @@
+name: Simple Laravel Deployment 🚀
+
+on:
+  push:
+    branches:
+      - main  # or dev if you prefer
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Deploy Code to Server
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/laravel-check
+            git reset --hard
+            git pull origin main
+            echo "✅ Code updated successfully!"
