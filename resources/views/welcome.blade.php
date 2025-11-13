@@ -6,6 +6,6 @@
 <body>
     <h1>Welcome to My Laravel Project 🎉</h1>
     <p>This is my first Laravel page.</p>
-    <p>Hello CI/CD Pipeline</p>
+    <p>Hello CI/CD Pipelines</p>
 </body>
 </html>
